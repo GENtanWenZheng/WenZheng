@@ -1,0 +1,180 @@
+<!DOCTYPE html> 
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Taste of Home-Home</title>
+      <style>
+         body {
+         margin: 0;
+         padding: 0;
+         }
+         ul {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+         background-color: #3B2E2E;
+         position: sticky;
+         top: 0;
+         }
+         ul li {
+         float: left;
+         }
+         ul li a {
+         display: block;
+         color: #FFF2CC;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+         }
+         ul li a:hover {
+         background-color: #D95D39;
+         }
+         ul li a.logo {
+         background-color: #D95D39;
+         }
+         .logo {
+         font-size: 20px;
+         font-weight: bold;
+        }
+         .Hero-section{
+         background: url(https://images.adsttc.com/media/images/6213/611b/b0be/7001/64e1/45ec/newsletter/ts-motherbkk-04.jpg?1645437230) no-repeat center; 
+         background-size: cover;
+         height: 900px;
+         position: relative;
+         }
+         .Hero-text {
+         text-align: center;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         color: #FFF2CC;
+         text-shadow: 0 8px 20px rgba(168,198,134,0.4);
+         }
+         .About{
+         background: #FFF2CC;
+         padding:150px 50px;
+         text-align:center;
+         }
+         .About h2{
+         font-size:32px;
+         margin-bottom:18px;
+         color:#3B2E2E;
+         }
+         .About p{
+         max-width:820px;
+         margin:0 auto;
+         color:#333333;
+         font-size:23px;
+         }
+         .Dishes{
+         background: #A8C686;
+         padding:200px 50px;
+         text-align:center;
+         }
+         .Dishes h2{
+         font-size:32px;
+         margin-bottom:18px;
+         color:#3B2E2E;
+         }
+         .gallery{
+         display:grid;
+         grid-template-columns:repeat(3,1fr);
+         gap:20px;
+         margin-top:26px;
+         }
+         .gallery-item{
+         background: #FFFFFF;
+         color: #D95D39;
+         border-radius:12px;
+         padding:18px;
+         display:flex;
+         flex-direction:column;
+         align-items:center;
+         text-align:center;
+         min-height:280px;
+         box-shadow: 0 8px 20px rgba(168,198,134,0.4);
+         }
+         .gallery-item img{ width:100%; height:100%; object-fit:cover; border-radius:8px; margin-bottom:12px;}
+         .gallery-item .desc{ font-size:20px; font-weight:600; margin-top:auto; }
+         .Info{
+         background: #3B2E2E;
+         padding:200px 50px;
+         text-align:center;
+         }
+         .Info h2{
+         font-size:32px;
+         margin-bottom:18px;
+         color: #FFF2CC;
+         }
+         .Info p{
+         max-width:820px;
+         margin:0 auto;
+         color:#FFF2CC;
+         font-size:23px;
+         }
+         .btn {
+         background: #FFF2CC;
+         padding: 12px 25px;
+         border-radius: 25px;
+         border: none;
+         }
+         .btn:hover {
+         background-color: #D95D39;
+         }
+      </style>
+   </head>
+   <body>
+      <ul>
+         <li><a class="logo" href="Home.html">Taste of Home</a></li>
+         <li><a href="Home.html">Home</a> </li>
+         <li><a href="Menu.html">Menu</a></li>
+         <li><a href="Our Story.html">Our Story</a></li>
+         <li><a href="Contact.html">Contact</a></li>
+      </ul>
+      <section class="Hero-section">
+         <section class="Hero-text">
+            <h1 style="font-size:60px">Taste of Home</h1>
+            <h3>Reminds you of the taste of home.</h3>
+            <a href="Menu.html" class="btn">Order Now</a>
+         </section>
+      </section>
+      <section class="About">
+         <h2>About Us</h2>
+         <p>It’s not the fancy ingredients, but the love and memories that make a meal special.</p>
+      </section>
+      <section class="Dishes">
+         <h2>Featured Dishes</h2>
+         <section class="gallery">
+            <article class="gallery-item">
+               <img src="https://tokyo-kitchen.icook.network/uploads/recipe/cover/167595/9e54233767b98ec2.jpg" alt="Scrambled Eggs with Tomatoes" >
+               <div class="desc">🍅 Tomato scrambled eggs after class</div>
+            </article>
+            <article class="gallery-item">
+               <img src="https://www.nanyangkitchen.co/wp-content/uploads/2020/10/162.-排骨马蹄玉米汤_YB_2.jpg" alt="Pork Rib Soup" >
+               <div class="desc">🍲 Mom's slow-cooked pork rib soup</div>
+            </article>
+            <article class="gallery-item">
+               <img src="https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480/img/recipe/ras/Assets/47d33fa8-1f0f-4024-9e21-a3894464fbf4/Derivates/eb46726d-15d5-443e-b043-119be4fbdbcd.jpg" alt="Braised Pork" >
+               <div class="desc">🥘 Braised pork for entertaining guests</div>
+            </article>
+         </section>
+      </section>
+      <section class="Info">
+         <h2>Practical Info</h2>
+         <p><strong>📍 Address:</strong> 511, Love ln, George Town, 250511 George Town, Pulau Pinang</p>
+         <br>
+         <p><strong>🕒 Opening Hours:</strong> Tuesday – Sunday, 7:30am – 3:00pm | 5:30pm – 10:00pm</p>
+         <br>
+         <p><strong>📞 Phone:</strong> +60108777231</p>
+         <br>
+         <p><strong>💬 WhatsApp:</strong> +60108777231</p>
+         <br>
+         <p><strong>✉️ Email:</strong> <a href="mailto:tanwenzheng7231@gmail.com">tanwenzheng7231@gmail.com</a></p>
+         <br>
+         <a href="Menu.html" class="btn">Order Now</a>
+      </section>
+   </body>
+</html>

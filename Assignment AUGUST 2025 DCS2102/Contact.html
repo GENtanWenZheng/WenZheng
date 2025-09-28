@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Taste of Home-Contact</title>
+      <style>
+         body {
+         margin: 0;
+         padding: 0;
+         }
+         ul {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+         background-color: #3B2E2E;
+         position: sticky;
+         top: 0;
+         }
+         ul li {
+         float: left;
+         }
+         ul li a {
+         display: block;
+         color: #FFF2CC;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+         }
+         ul li a:hover {
+         background-color: #D95D39;
+         }
+         ul li a.logo {
+         background-color: #D95D39;
+         }
+         .logo {
+         font-size: 20px;
+         font-weight: bold;
+        }
+         .Info{
+         background: #D95D39;
+         padding:230px 50px;
+         text-align:center;
+         background-size: cover;
+         }
+         .Info h2{
+         font-size:32px;
+         margin-bottom:18px;
+         }
+         .Info p{
+         max-width:820px;
+         margin:0 auto;
+         color:#FFF2CC;
+         font-size:23px;
+         }
+      </style>
+   </head>
+   <body>
+      <ul>
+         <li><a class="logo" href="Home.html">Taste of Home</a></li>
+         <li><a href="Home.html">Home</a> </li>
+         <li><a href="Menu.html">Menu</a></li>
+         <li><a href="Our Story.html">Our Story</a></li>
+         <li><a href="Contact.html">Contact</a></li>
+      </ul>
+      <section class="Info">
+         <h2>Practical Info</h2>
+         <p><strong>📍 Address:</strong> 511, Love ln, George Town, 250511 George Town, Pulau Pinang</p>
+         <br>
+         <p><strong>🕒 Opening Hours:</strong> Tuesday – Sunday, 7:30am – 3:00pm | 5:30pm – 10:00pm</p>
+         <br>
+         <p><strong>📞 Phone:</strong> +60108777231</p>
+         <br>
+         <p><strong>💬 WhatsApp:</strong> +60108777231</p>
+         <br>
+         <p><strong>✉️ Email:</strong> <a href="mailto:tanwenzheng7231@gmail.com">tanwenzheng7231@gmail.com</a></p>
+         <br>
+         <p>Follow us on <strong>Instagram:</strong>   
+            <br>
+            <a href="https://www.instagram.com/gen06z/" >@gen06z</a>
+        </p>
+         <h2>Contact Us</h2>
+         <form id="contactForm">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+            <input type="submit" value="Send Message">
+         </form>
+      </section>
+      <script>
+         document.getElementById("contactForm").addEventListener("submit", function(event) {
+           event.preventDefault(); 
+           alert("Your message has been sent!"); 
+           this.reset(); 
+         });
+      </script>
+   </body>
+</html>

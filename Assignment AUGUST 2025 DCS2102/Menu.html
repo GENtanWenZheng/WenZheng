@@ -1,0 +1,352 @@
+<!DOCTYPE html> 
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Taste of Home-Menu</title>
+      <style>
+         body {
+         margin: 0;
+         padding: 0;
+         }
+         ul {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+         background-color: #3B2E2E;
+         position: sticky;
+         top: 0;
+         }
+         ul li {
+         float: left;
+         }
+         ul li a {
+         display: block;
+         color: #FFF2CC;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+         }
+         ul li a:hover {
+         background-color: #D95D39;
+         }
+         ul li a.logo {
+         background-color: #D95D39;
+         }
+         .logo {
+         font-size: 20px;
+         font-weight: bold;
+        }
+         .main-container {
+         display: flex;
+         align-items: flex-start;
+         }
+         .menu-container {
+         flex: 3;
+         padding: 20px;
+         }
+         .categories {
+         display: flex;
+         gap: 15px;
+         margin-bottom: 20px;
+         }
+         .categories button {
+         padding: 10px 20px;
+         border-radius: 20px;
+         border: none;
+         background: #A8C686;
+         cursor: pointer;
+         }
+         .categories button.active {
+         background: #D95D39;
+         color: white;
+         }
+         .dishes {
+         display: flex;
+         gap: 20px;
+         flex-wrap: wrap;
+         }
+         .dish-card {
+         border: 1px solid #FFFFFF;
+         border-radius: 10px;
+         padding: 10px;
+         width: 200px;
+         text-align: center;
+         box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+         }
+         .dish-card img {
+         width: 100%;        
+         height: 150px;      
+         object-fit: cover;  
+         border-radius: 10px;
+         }
+         .dish-card h4 {
+         color:#D95D39;
+         }
+         .dish-card p {
+         color:#3B2E2E;
+         }
+         .order-btn {
+         display: block;
+         margin-top: 10px;
+         background: #D95D39;
+         color: white;
+         border: none;
+         padding: 10px 72px;
+         border-radius: 20px;
+         cursor: pointer;
+         }
+         .cart-container {
+         flex: 1;
+         background: #fafafa;
+         padding: 20px;
+         border-left: 1px solid #ddd;
+         border-radius: 10px;
+         max-width: 300px;
+         position: sticky;
+         top: 70px;   
+         }
+         .cart-container h3 {
+         margin-top: 0;
+         }
+         .checkout-btn {
+         width: 100%;
+         background: #e07a5f;
+         color: white;
+         border: none;
+         padding: 15px;
+         border-radius: 25px;
+         font-size: 16px; 
+         cursor: pointer;
+         }
+         #order-list {
+         background-color: #f9f9f9;
+         color: #333;
+         padding: 12px;
+         border-radius: 6px;
+         font-size: 14px;
+         line-height: 1.6;
+         border: 1px solid #ddd;
+         }
+      </style>
+   </head>
+   <body>
+      <ul>
+         <li><a class="logo" href="Home.html">Taste of Home</a></li>
+         <li><a href="Home.html">Home</a> </li>
+         <li><a href="Menu.html">Menu</a></li>
+         <li><a href="Our Story.html">Our Story</a></li>
+         <li><a href="Contact.html">Contact</a></li>
+      </ul>
+      <div class="main-container">
+      <div class="menu-container">
+         <div class="categories">
+            <div class="active">
+               <button><a href="#Soups">Soups</a></button>
+               <button><a href="#Main Dishes">Main Dishes</a></button>
+               <button><a href="#Home-Cooked Side Dishes">Home-Cooked Side Dishes</a></button>
+               <button><a href="#Classic Mom's Recipes">Classic Mom's Recipes</a></button>
+               <button><a href="#Desserts/Drinks">Desserts/Drinks</a></button>
+            </div>
+         </div>
+         <h2>Soups</h2>
+         <div id="Soups">
+            <div class="dishes">
+               <div class="dish-card">
+                  <img src="https://asianinspirations.com.au/wp-content/uploads/2018/12/R01561_Pork_Ribs_Lotus_Root_Soup.jpg" alt="Traditional Lotus Root and Pork Rib Soup">
+                  <h4>Traditional Lotus Root and Pork Rib Soup</h4>
+                  <p>A symbol of my mother's patience and nourishment.</p>
+                  <p>RM32.99 (Serves 2–3)</p>
+                  <button class="order-btn">Order now</button>
+               </div>
+               <div class="dish-card">
+                  <img src="https://smellylunchbox.com/wp-content/uploads/2023/09/abcsoup-1-1500x1000.jpg" alt="Corn and Carrot Chicken Soup">
+                  <h4>Corn and Carrot Chicken Soup</h4>
+                  <p>My mother often made it when I had a cold as a child.</p>
+                  <p>RM29.99 (Serves 2–3)</p>
+                  <button class="order-btn">Order now</button>
+               </div>
+            </div>
+         </div>
+         <h2>Main Dishes</h2>
+         <div id="Main Dishes">
+            <div class="dishes">
+               <div class="dish-card">
+                  <img src="https://www.allrecipes.com/thmb/GxHYGQD4Vh9BBu-EDlSv5XGBJNc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ALR-23298-egg-fried-rice-VAT-4x3-2closeup-ab653366830b41cc8d62627939ccc6c7.jpg" alt="Mom's Egg Fried Rice">
+                  <h4>Mom's Egg Fried Rice</h4>
+                  <p>Added with diced ham, green beans, and a hearty touch.</p>
+                  <p>RM12.99</p>
+                  <button class="order-btn">Order now</button>
+               </div>
+               <div class="dish-card">
+                  <img src="https://blog.themalamarket.com/wp-content/uploads/2025/04/rice-vermicelli_hero3-T.jpg" alt="Hometown Fried Rice Noodles">
+                  <h4>Hometown Fried Rice Noodles</h4>
+                  <p>Stir-fried until just a hint of wok flavor, a classic home-style flavor.</p>
+                  <p>RM13.99</p>
+                  <button class="order-btn">Order now</button>
+               </div>
+               <div class="dish-card">
+                  <img src="https://images.getrecipekit.com/20250320000829-white-20rice.jpg?width=650&quality=90&" alt="White Rice (Unlimited Refills)">
+                  <h4>White Rice (Unlimited Refills)</h4>
+                  <p>Just like at home, the rice is always left over.</p>
+                  <p>RM4.99 per person</p>
+                  <button class="order-btn">Order now</button>
+               </div>
+            </div>
+         </div>
+         <h2>Home-Cooked Side Dishes</h2>
+         <div id="Home-Cooked Side Dishes">
+            <div class="dishes">
+               <div class="dish-card">
+                  <img src="https://www.seriouseats.com/thmb/x0vnjhAcADSxV7F2OwSNChb3oe0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20230822-SEA-stir-fried-choy-sum-minced-garlic-recipe-hero-01-Qi-Ai-ddb2c0241eb547edb5665a29f7ecab21.jpg" alt="Stir-fried Greens with Garlic">
+                  <h4>Stir-fried Greens with Garlic</h4>
+                  <p>A simple yet common, heart-warming dish.</p>
+                  <p>RM12.99</p>
+                  <button class="order-btn">Order now</button>
+               </div>
+               <div class="dish-card">
+                  <img src="https://itsmydish.com/wp-content/uploads/2015/06/scramble-egg-with-tomatos-final1.jpg" alt="Scrambled Eggs with Tomatoes">
+                  <h4>Scrambled Eggs with Tomatoes</h4>
+                  <p>A childhood staple for many.</p>
+                  <p>RM13.99</p>
+                  <button class="order-btn">Order now</button>
+               </div>
+               <div class="dish-card">
+                  <img src="https://i.ytimg.com/vi/J15v4yQ6IBY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDDe3R4_Chi76nhuMBNCfIv52zkeg" alt="Braised Chicken with Potatoes">
+                  <h4>Braised Chicken with Potatoes</h4>
+                  <p>Soft and glutinous potatoes soak up the sauce.</p>
+                  <p>RM19.99</p>
+                  <button class="order-btn">Order now</button>
+               </div>
+               <div class="dish-card">
+                  <img src="https://www.seriouseats.com/thmb/anSyWirxWjeZtiLzb39qqO6LvLI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2015__02__20150213-steamed-fish-fermented-black-beans-garlic-shao-zhong-7-cdcd2bd69fb24195a0d935f2293caab6.jpg" alt="Steamed Fish with Fermented Black Beans">
+                  <h4>Steamed Fish with Fermented Black Beans</h4>
+                  <p>It's like my mother urging me to eat more fish to "be smart."</p>
+                  <p>RM44.99</p>
+                  <button class="order-btn">Order now</button>
+               </div>
+            </div>
+         </div>
+         <h2>Classic Mom's Recipes</h2>
+         <div id="Classic Mom's Recipes">
+            <div class="dishes">
+               <div class="dish-card">
+                  <img src="https://www.theminichef.com/wp-content/uploads/2020/09/chinese-braised-pork-belly-2.jpg" alt="Braised Pork">
+                  <h4>Braised Pork</h4>
+                  <p>Perfectly sweet and salty, melts in your mouth.</p>
+                  <p>RM34.99</p>
+                  <button class="order-btn">Order now</button>
+               </div>
+               <div class="dish-card">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Soy_Sauce_Chicken.jpg" alt="Soy Sauce Chicken">
+                  <h4>Soy Sauce Chicken</h4>
+                  <p>The ultimate homey flavor.</p>
+                  <p>RM32.99</p>
+                  <button class="order-btn">Order now</button>
+               </div>
+               <div class="dish-card">
+                  <img src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_16:9/k%2FPhoto%2FRecipes%2F2020-08-Grace-Young-Stir-Fry-Recipe-Package%2Fstir-fried-chili-mango-shrimp%2Fgrace-young-the-kitchn-christine-han-photography-112" alt="Stir-fried Shrimp with Chili Peppers">
+                  <h4>Stir-fried Shrimp with Chili Peppers</h4>
+                  <p>My mother's specialty when entertaining guests. </p>
+                  <p>RM44.99</p>
+                  <button class="order-btn">Order now</button>
+               </div>
+            </div>
+         </div>
+         <h2>Desserts/Drinks</h2>
+         <div id="Desserts/Drinks">
+            <div class="dishes">
+               <div class="dish-card">
+                  <img src="https://delightfulplate.com/wp-content/uploads/2021/08/Tofu-Pudding-DouhuaTao-Pho.jpg" alt="Tofu Pudding + Brown Sugar Ginger Juice">
+                  <h4>Tofu Pudding + Brown Sugar Ginger Juice</h4>
+                  <p>Warm and comforting.</p>
+                  <p>RM8.99</p>
+                  <button class="order-btn">Order now</button>
+               </div>
+               <div class="dish-card">
+                  <img src="https://feedgrump.com/wp-content/uploads/2023/06/red-bean-soup-feature-1-500x375.jpg" alt="Red Bean Soup">
+                  <h4>Red Bean Soup</h4>
+                  <p>A must-have after-meal dessert for mom.</p>
+                  <p>RM8.99</p>
+                  <button class="order-btn">Order now</button>
+               </div>
+               <div class="dish-card">
+                  <img src="https://the-chinese-tea-company.com/cdn/shop/files/Chrysanthemum2_2000x.jpg?v=1755261788" alt="Chrysanthemum Tea">
+                  <h4>Chrysanthemum Tea</h4>
+                  <p>Mom always says, "Don't drink too many cold drinks."</p>
+                  <p>RM5.99</p>
+                  <button class="order-btn">Order now</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="cart-container">
+         <h3>Your Order</h3>
+         <ul id="order-list">
+         </ul>
+         <hr>
+         <p><strong>Total:</strong> RM<span id="total-price">0.00</span></p>
+         <button id="checkout-btn" class="checkout-btn">Go to checkout</button>
+         <button id="clear-order" class="checkout-btn" style="background:#5c3d2e;margin-top:10px;">Clear Order
+         </button>
+      </div>
+      <script>
+         const orderList = document.getElementById("order-list");
+         const totalPriceEl = document.getElementById("total-price");
+         const clearBtn = document.getElementById("clear-order");
+         const checkoutBtn = document.getElementById("checkout-btn");
+         
+         let total = 0;
+         
+         
+         document.querySelectorAll(".order-btn").forEach(btn => {
+          btn.addEventListener("click", function() {
+            const card = this.parentElement;
+            const name = card.querySelector("h4").innerText;
+            const priceText = card.querySelector("p:nth-of-type(2)").innerText;
+         
+         
+            const price = parseFloat(priceText.replace(/[^\d.]/g, ""));
+         
+         
+            const li = document.createElement("li");
+            li.innerHTML = `${name} - RM${price.toFixed(2)} 
+              <button class="remove-btn" style="margin-left:10px; color:red; border:none; background:none; cursor:pointer;">❌</button>`;
+         
+         
+            li.querySelector(".remove-btn").addEventListener("click", function() {
+              li.remove();
+              total -= price;
+              totalPriceEl.textContent = total.toFixed(2);
+            });
+         
+         
+            orderList.appendChild(li);
+         
+         
+            total += price;
+            totalPriceEl.textContent = total.toFixed(2);
+          });
+         });
+         
+         
+         clearBtn.addEventListener("click", function() {
+          orderList.innerHTML = "";
+          total = 0;
+          totalPriceEl.textContent = total.toFixed(2);
+         });
+         
+         
+         checkoutBtn.addEventListener("click", function() {
+          if (total > 0) {
+            window.location.href = "https://www.instagram.com/gen06z/"; 
+          } else {
+            alert("Please add some items to your order before checkout!");
+          }
+         });
+        
+
+      </script>
+   </body>
+</html>
