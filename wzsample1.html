@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bleu et Blanc - Reservation</title>
+  <style>
+    body {
+      background-color: #F7F9FC;
+      color: #2C3E50;
+      padding: 40px;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border: 1px solid #C1AA81;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2C3E50;
+      font-size: 4rem;
+      margin-bottom: 40px;
+    }
+
+    p {
+      text-align: center;
+      font-style: italic;
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    h2 {
+      font-size: 2rem;
+      border-bottom: 2px solid #C1AA81;
+      padding-bottom: 5px;
+      margin-top: 40px;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      color: #2C3E50;
+      margin-top: 20px;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #1F1F1F;
+    }
+
+    .menu-desc {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .menu-images {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      margin: 20px 0;
+    }
+
+    .menu-images img {
+      width: 100%;
+     max-width: 240px;
+     height: 160px;
+     object-fit: cover;
+     border: 1px solid #C1AA81;
+    }
+    form {
+      margin-top: 30px;
+      display: grid;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #B0B6C1;
+      border-radius: 0;
+    }
+
+    button {
+      background-color: #A2C3E5;
+      color: white;
+      padding: 12px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border: none;
+      border-radius: 0;
+    }
+
+    button:hover {
+      background-color: #5B94C9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Bleu et Blanc</h1>
+    <p>Quiet luxury meets refined cuisine in shades of blue and white — a serene space where modern European flavours unfold with grace and simplicity.</p>
+
+    <p>"Dîner en bleu, rêver en blanc."</p>
+
+    <div class="menu">
+      <h2>Menu</h2>
+
+      <div class="menu-category">
+        <h3>Starters</h3>
+        <div class="menu-item"><span>Foie Gras on Brioche</span><span>RM42</span></div>
+        <div class="menu-desc">Pan-seared duck liver served on toasted brioche with fig compote and balsamic glaze.</div>
+        <div class="menu-item"><span>Burrata & Heirloom Tomato Salad</span><span>RM34</span></div>
+        <div class="menu-desc">Creamy Italian burrata, heritage tomatoes, microgreens, and basil oil drizzle.</div>
+        <div class="menu-item"><span>Truffle Wild Mushroom Soup</span><span>RM28</span></div>
+        <div class="menu-desc">A rich velouté of seasonal mushrooms finished with white truffle oil and herb cream.</div>
+      </div>
+
+<div class="menu-images">
+  <img src="https://www.maisonduffour.com/cdn/shop/articles/foie-gras-poele-brioche_ver_10599ac3-2d33-41e2-9a3d-8175bb5b9b4f_1246x.jpg?v=1623670309">
+  <img src="https://www.daisybeet.com/wp-content/uploads/2022/07/Heirloom-Tomato-and-Burrata-Salad-5052.jpg">
+  <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/94/55/55/wild-mushroom-soup-with.jpg">
+</div>
+
+      <div class="menu-category">
+        <h3>Main Courses</h3>
+        <div class="menu-item"><span>Dry-Aged Angus Ribeye (250g)</span><span>RM88</span></div>
+        <div class="menu-desc">Char-grilled to perfection, served with pomme purée, grilled asparagus, and red wine jus.</div>
+        <div class="menu-item"><span>Herb-Crusted Lamb Rack</span><span>RM78</span></div>
+        <div class="menu-desc">Roasted lamb rack in a rosemary crust, truffle mash, ratatouille, and mint jus.</div>
+        <div class="menu-item"><span>Seared Atlantic Cod</span><span>RM66</span></div>
+        <div class="menu-desc">Butter-seared cod with beurre blanc, charred leeks, and lemon potato confit.</div>
+        <div class="menu-item"><span>Lobster Tagliatelle</span><span>RM72</span></div>
+        <div class="menu-desc">Hand-cut tagliatelle in a saffron cream sauce with poached lobster and cherry tomatoes.</div>
+        <div class="menu-item"><span>Risotto al Tartufo (V)</span><span>RM52</span></div>
+        <div class="menu-desc">Arborio rice cooked in parmesan stock, finished with black truffle shavings.</div>
+      </div>
+
+<div class="menu-images">
+  <img src="https://www.sykeshousefarm.co.uk/wp-content/uploads/2020/11/ribeye-steak.jpg">
+  <img src="https://images.ricardocuisine.com/services/recipes/8292.jpg">
+  <img src="https://www.cookingclassy.com/wp-content/uploads/2021/05/lemon-butter-cod-31.jpg">
+</div>
+      
+      <div class="menu-category">
+        <h3>Desserts</h3>
+        <div class="menu-item"><span>Dark Chocolate Fondant</span><span>RM26</span></div>
+        <div class="menu-desc">Rich molten center, served with Madagascan vanilla bean ice cream.</div>
+        <div class="menu-item"><span>Pistachio Crème Brûlée</span><span>RM24</span></div>
+        <div class="menu-desc">Silky custard with a crisp caramel top, infused with Sicilian pistachio.</div>
+        <div class="menu-item"><span>Strawberry Rosé Pavlova</span><span>RM25</span></div>
+        <div class="menu-desc">Crisp meringue, whipped mascarpone, rosé gel, and fresh strawberries.</div>
+      </div>
+
+<div class="menu-images">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5rwsQ3YO7rzHQZTgZOLuIMktz2RkPtOEdg&s">
+  <img src="https://www.loveandoliveoil.com/wp-content/uploads/2022/11/pistachio-creme-brulee-FEAT-1200x800.jpg">
+  <img src="https://berryworld.imgix.net/assets/Strawberry-pavlova-overhead-SQ.jpg?">
+</div>
+      
+      <div class="menu-category">
+        <h3>Beverages</h3>
+        <div class="menu-item"><span>Single Origin Pour Over</span><span>RM18</span></div>
+        <div class="menu-desc">Choose from Ethiopia / Colombia / Sumatra</div>
+        <div class="menu-item"><span>Artisan Tea Selection</span><span>RM16</span></div>
+        <div class="menu-desc">Earl Grey Lavender · Chamomile Citrus · Japanese Sencha</div>
+        <div class="menu-item"><span>Mocktail: Cucumber Basil Sparkle</span><span>RM18</span></div>
+        <div class="menu-desc">Sparkling tonic, cucumber essence, fresh basil & lime</div>
+        <div class="menu-item"><span>Wine Pairing Available</span><span>From RM28</span></div>
+        <div class="menu-desc">Ask our sommelier for curated pairings</div>
+      </div>
+    </div>
+
+<div class="menu-images">
+  <img src="https://toffeecoffeeroasters.com/cdn/shop/collections/Untitled_design_10_1400x.png?v=1599560277">
+  <img src="https://tucsontea.com/cdn/shop/files/SP-lavender-earl-grey-1000x1000.jpg?v=1705537306">
+  <img src="https://www.thekitchenabroad.com/wp-content/uploads/2025/05/Cucumber-Basil-Citrus-Mocktail-Recipe-2-735x1310.jpeg">
+</div>
+      
+      <h2>Reservation Form</h2>
+    <form action="YOUR_FORMSPREE_URL" method="POST">
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone">
+
+      <label for="datetime">Date and Time</label>
+      <input type="datetime-local" id="datetime" name="datetime" required>
+
+      <label for="guests">Number of Guests</label>
+      <input type="number" id="guests" name="guests" required>
+
+      <label for="requests">Special Requests</label>
+      <textarea id="requests" name="requests"></textarea><br>
+
+      <button type="submit">Submit Reservation</button><br>
+    </form>
+  </div>
+
+  <p style="text-align:center;margin-top:30px;">Privacy Policy | Terms of Use</p>
+  <p style="text-align:center;">&copy; Bleu et Blanc</p>
+</body>
+</html>
